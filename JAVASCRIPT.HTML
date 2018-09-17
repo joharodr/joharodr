@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        var dias = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
+
+        //function
+
+        for (k in dias) {
+            console.log(dias[k])
+        }
+
+        dias.forEach(function (dia) {
+            console.log(dia)
+        })
+
+        dias.forEach(dia => console.log(dia))
+
+
+        var number1 = [1, 3, 5, 7, 9, 1 + 10]
+        //function
+
+        for (a in number1) {
+            console.log(number1[a])
+        }
+
+        number1.forEach(function (numero1) {
+            console.log(numero1)
+        })
+
+        number1.forEach(numero1 => console.log(numero1))
+
+        var escrito = "texto1"
+        var datos = "texto1"
+        var datos2 = "texto2"
+        var bool1 = [escrito == datos, escrito == datos2]
+
+        //function
+
+        for (b in bool1) {
+            console.log(bool1[b])
+        }
+
+        bool1.forEach(function (bool) {
+            console.log(bool)
+
+        })
+
+        bool1.forEach(bool => console.log(bool))
+
+        var mezcla = [1, 3, dias, "7+1", 1 + 10]
+        //function
+        { console.log(mezcla) }
+
+        var fundaciones = [{ nombre: "niños perdidos" },
+        { nombre: "abuelos de la nada" },
+        { nombre: "drogadiccion" },
+        { nombre: "viviendo en la calle" }];
+            //function
+            console.log(fundaciones)
+
+       
+        var beneficiarios = [{ atencion: ["niños", "adolescentes"] },
+        { atencion: ["adultos", "abuelos"] },
+        { atencion: ["adolescentes", "adultos", "abuelos"] },
+        { atencion: ["niños", "adolescentes", "abuelos"] }];
+            //function
+            console.log(beneficiarios)
+
+        
+        var funda = [fundaciones, beneficiarios];
+            //function
+            console.log(funda)
+        
+        
+
+        var car1 = {marca:"renault", modelo:"2001", color:"azul", placa: 5}
+           //function
+           console.log(car1)
+
+        var car2 = {marca:"mazda", modelo:"2005", color:"rojo", placa: 4}
+           //function
+           console.log(car2)
+        
+        var venta = {car1, car2}
+           //function
+           console.log(venta.car1.marca)
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <h1> dias </h1>
+
+<div class="row">
+<ul id=letras>
+<li>A</li>
+<li>B</li>
+<li>C</li>
+<li>D</li>
+<li>E</li>
+<li>F</li>
+<li>G</li>
+<li>H</li>
+<li>I</li>
+<li>J</li>    
+</ul>
+</div>
+
+<button onclick=ver >
+    LISTA</button>
+<br>
+<p id=demo></p>
+
+<script>
+        //function ver
+        {
+            console.log(letras)
+            
+            var demo = document.getElementById(letras);
+           
+        }
+        
+        </script>
+
+
+
+</body>
+
+</html>

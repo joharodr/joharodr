@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MATERIALIZA Y GETBOOTSTRAP</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="ESTILOS.CSS">
+
+
+    <style>
+        .col {border: 2px solid; color: blue}    
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col s1">1</div>
+            <div class="col s1">2</div>
+            <div class="col s1">3</div>
+            <div class="col s1">4</div>
+            <div class="col s1">5</div>
+            <div class="col s1">6</div>
+            <div class="col s1">7</div>
+            <div class="col s1">8</div>
+            <div class="col s1">9</div>
+            <div class="col s1">10</div>
+            <div class="col s1">11</div>
+            <div class="col s1">12</div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col s12">This div is 12-columns wide on all screen sizes</div>
+            <div class="col s6">6-columns (one-half)</div>
+            <div class="col s6">6-columns (one-half)</div>
+        </div>
+
+        <br>
+
+        <button type="button" class="btn btn-primary">
+            <a href="https://es.wikipedia.org/wiki/Serpentes" target="_blank" style="color:black;">Serpiente
+            </a>
+        </button>
+
+
+        <button type="button" class="btn btn-secondary">
+            <a href="file:///C:/JOHAN/TALLER.HTML" target="_blank" style="color:black;">Animales </a>
+
+        </button>
+
+        <br>
+        <br>
+
+        <button type="button" class="btn btn-primary btn-lg btn-block">
+            Success
+        </button>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col s12" style="color:black; font-size: 25px">COLUMNA 1</div>
+            <div class="col s6">COLUMNA 2</div>
+            <div class="col s6">COLUMNA 3</div>
+        </div>
+
+        <br>
+        <br>
+
+        <!-- Switch -->
+        <div class="switch">
+            <label>
+                Off
+                <input type="checkbox">
+                <span class="lever"></span>
+                On
+            </label>
+        </div>
+        <br>
+
+
+        <div class="carousel carousel-slider" style="width:50%; margin: 0 25%">
+            <a class="carousel-item" href="#one!"><img src="https://www.anipedia.net/imagenes/taxonomia-conejos.jpg" ></a>
+            <a class="carousel-item" href="#two!"><img src="https://cocina-casera.com/wp-content/uploads/2018/04/gallinas.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="https://ep01.epimg.net/elpais/imagenes/2017/10/13/mundo_animal/1507881257_822649_1507882488_noticia_normal.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Puma_face.jpg/1200px-Puma_face.jpg"></a>
+        </div>
+
+<br>
+
+
+
+
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var options = {
+                dist: -100,
+                noWrap: true,
+                fullWidth:false
+                
+            }
+            var instances = M.Carousel.init(elems, options);
+        });
+    </script>
+
+</body>
+
+</html>
